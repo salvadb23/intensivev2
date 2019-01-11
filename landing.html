@@ -52,14 +52,31 @@
     </div>
   </div>
 </section>
+
 <section class="info is-large">
-  <div class="container">
-    <h1 class="title ">Features Podhub offers!</h1>
-    <div class="columns">
-      <div class="column">1</div>
-      <div class="column">2</div>
-      <div class="column">3</div>
+  <div class="svg-image-container">
+  <div class="columns" style="padding: 50px;">
+    <div class="column">
+      <img src="people.png">
     </div>
+    <div class="column">
+      <h1 class="info-title">Features to fit anyones needs!</h1>
+      <ol>
+        <li>Free Unlimited Storage. No limits, no free trials.</li>
+        <li>Distribute to every app that features podcasts with one click</li>
+        <li>We make it easy to monetize your content. Ads, premium podcasts and donations can all be done from our dashboard</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section class="email">
+  <h1 class="title email-title">Stay Updated</h1>
+  <h2 class="subtitle" style="text-align: center;padding: 20px; font-size: 26px;">We're not live yet, but enter your email below and make sure you're notified when we are!</h2>
+  <div class="wrapper-email">
+    <input type="text" name="email" placeholder="enter your email" class="email-input">
+  </div>
+  <div class="wrapper-img">
+    <img class="email-img" src="email-trans.png">
   </div>
 </section>
   </body>
@@ -69,6 +86,41 @@
       background-color: rgba(0,0,0,.5);
       background-image: url(hero.jpg); 
     }
+
+    .wrapper-email {
+      width: 47%;
+      margin: auto;
+    }
+
+    .email-img {
+      height: 400px;
+      text-align: center;
+    }
+
+    .wrapper-img {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email-input {
+      border-radius: 30px;
+      border:1px black solid;
+      width: 800px;
+      height: 60px;
+      text-align: center;
+      margin: auto;
+    }
+
+    .email-title {
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      font-size: 50px;
+      padding-top: 30px;
+    }
+
     .podhub {
       font-size: 75px;
       padding-bottom: 50px;
@@ -77,5 +129,64 @@
       font-size: 30px;
       font-weight: bold;
     }
+
+    .email {
+      height: 700px;
+      background-color: #fbfbfb
+    }
+
+    ol {
+      padding-top: 10px;
+      width: 83%;
+      margin: auto;
+      font-size: 25px;
+    }
+
+    li {
+      padding: 10px;
+    }
+
+    .svg {
+      position: absolute;
+      background-image: url(676.svg);
+      width: 600px;
+      height: 600px;
+      margin: auto;
+      margin-left: 60px;
+    }
+    .svg-image-container {
+      height: 100%;
+    }
+
+    .info-container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      height: 100%;
+      flex-direction: row;
+    }
+
+    .info {
+      height: 600px;
+      width: 100%;
+    }
+    .info-title {
+      font-weight: bold;
+      font-size: 50px;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+      padding-top: 30px;
+    }
+    .columns {
+      height: 100%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .info {
+        height: 1000px;
+      }
+    }
+
   </style>
 </html>
