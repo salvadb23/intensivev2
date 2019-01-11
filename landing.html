@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
   <body>
-<section class="hero is-dark is-large">
+<section class="hero is-link is-medium">
   <!-- Hero head: will stick at the top -->
   <div class="hero-head">
     <nav class="navbar">
@@ -69,6 +69,21 @@
     </div>
   </div>
 </section>
+<section class="social">
+  <div class="columns social-columns">
+    <div class="column">
+      <h1 class=" social-title">For the podcast listeners</h1>
+      <ol style="width: 65%">
+        <li>A new kind of social network, just for podcast listeners</li>
+        <li>Connect with people that listen to the same podcasts as yourself</li>
+        <li>Interact and support with content creators in all new ways</li>
+      </ol>
+    </div>
+    <div class="column">
+      <img style="width: 90%; margin-left: 40px;" src="social.png">
+    </div>
+  </div>
+</section>
 <section class="email">
   <h1 class="title email-title">Stay Updated</h1>
   <h2 class="subtitle" style="text-align: center;padding: 20px; font-size: 26px;">We're not live yet, but enter your email below and make sure you're notified when we are!</h2>
@@ -82,9 +97,27 @@
   </body>
   <style type="text/css">
     .hero-body {
-      background-size: cover;
+/*      background-size: cover;
       background-color: rgba(0,0,0,.5);
-      background-image: url(hero.jpg); 
+      background-image: url(hero.jpg); */
+    }
+
+    .social-title {
+      text-align: center;
+      width: 90%;
+      margin: auto;
+      font-size: 50px;
+      padding-top: 30px;
+      font-weight: bold;
+    }
+
+    .social {
+      height: 550px;
+      background-color: #fbfbfb
+    }
+
+    .social-columns {
+      height: 600px;
     }
 
     .wrapper-email {
@@ -106,11 +139,12 @@
 
     .email-input {
       border-radius: 30px;
-      border:1px black solid;
-      width: 800px;
+      border:1px hsl(217, 71%, 53%) solid;
+      width: 100%;
       height: 60px;
       text-align: center;
       margin: auto;
+      font-size: 20px;
     }
 
     .email-title {
@@ -132,7 +166,6 @@
 
     .email {
       height: 700px;
-      background-color: #fbfbfb
     }
 
     ol {
@@ -147,7 +180,6 @@
     }
 
     .svg {
-      position: absolute;
       background-image: url(676.svg);
       width: 600px;
       height: 600px;
